@@ -8,9 +8,10 @@ class MyNameMessageServiceTest {
 
     @Test
     public void shouldReturnMyNameAsMessage() {
-        String expectedMessage = "<your name>";
+        String expectedMessage = "Ambroży Pala";
         MyNameMessageService myNameMessageService = new MyNameMessageService();
-
+        RandomTextMessageService randomTextMessageService = new RandomTextMessageService();
+        System.out.println(randomTextMessageService.getMessage());
         assertEquals(expectedMessage, myNameMessageService.getMessage());
     }
 }
