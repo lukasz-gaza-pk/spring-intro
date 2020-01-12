@@ -13,7 +13,7 @@ public class MyApp {
         
         MessageService messageService2 = applicationContext.getBean("messageService2", MessageService.class);
         System.out.println(messageService2.getMessage());
-        System.out.println(messageService.hashCode());
+        System.out.println(messageService2.hashCode());
         
         applicationContext.close();
     }
