@@ -10,5 +10,4 @@ public class MyNameMessageService implements MessageService {
     public String getMessage(){
         return name;
     }
-
 }
